@@ -1,0 +1,301 @@
+* {
+  font-family: sans-serif;
+}
+
+:root {
+  --dark-color: #19283f;
+}
+
+.navbar {
+  background: gray;
+}
+
+.navbar li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar li a:hover {
+  color: #008000;
+}
+
+.navbar .badge span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #008000;
+}
+
+.search {
+  background: #eff7fa;
+}
+
+.search .container .inp-search {
+  width: 80%;
+  padding: 5px 9px 5px 5px;
+  outline: none;
+  border: solid 1px #000;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.search .btn-search {
+  padding: 5px;
+  border: solid 1px #000;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .product-box .card {
+    width: 250px;
+  }
+}
+
+.product-box .card .price {
+  background: gray;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-box .card {
+  background: rgba(128, 128, 128, 0.241);
+}
+
+.product-box .card img {
+  height: 200px;
+}
+
+.cardBox {
+  width: 80%;
+  height: 100%;
+  z-index: 10;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border: solid 1px #000;
+  background-color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  left: -90%;
+  top: 100px;
+  border-radius: 6px;
+}
+
+.cardBox .box {
+  border-bottom: solid 1px #000;
+}
+
+.cardBox button {
+  width: 100px;
+}
+
+.cardBox .box .div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.cardBox .box .div .imgBox {
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+  border: #000 solid 2px;
+}
+
+.cardBox .box .div .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardBox .box .div .trash {
+  color: #000;
+  cursor: pointer;
+  height: 100%;
+  margin-top: 60px;
+  margin-left: 4px;
+  font-size: 25px;
+}
+
+.cardBox .box .div .price {
+  margin-top: 57px;
+  background-color: #008000;
+  color: #000;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.cardBox .x-mark {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.btnTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.btnTotal .buy {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  cursor: pointer;
+  background-color: #008000;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: 20px;
+  font-weight: 600;
+}
+
+.btnTotal span {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inf.cardBox {
+  left: 0;
+}
+
+.bag span {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  left: 100px;
+}
+
+.connect {
+  background: #eff7fa;
+}
+
+.connect h2 {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.connect .point {
+  color: #ff0000;
+  font-size: 25px;
+}
+
+.connect ul li {
+  color: #008000;
+  font-weight: bold;
+}
+
+.scroll {
+  font-weight: bold;
+  font-size: 25px;
+  background: blue;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  right: 0;
+  cursor: pointer;
+}
+
+.evaluation {
+  background: var(--dark-color);
+  color: #eff7fa;
+}
+
+.evaluation .reaction span .good, .evaluation .reaction span .notGood {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.evaluation .reaction .counter1, .evaluation .reaction .counter2 {
+  font-weight: bold;
+}
+
+.evaluation .commentSubmit textarea {
+  outline: none;
+}
+
+.welcome {
+  background: var(--dark-color);
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eff7fa;
+  position: absolute;
+  top: -100%;
+}
+
+.payment {
+  background: var(--dark-color);
+  width: 100%;
+}
+
+.problem {
+  background: #eff7fa;
+}
+
+.problem .complaints .password input {
+  width: 90%;
+  height: 40px;
+}
+
+.problem .complaints .password .showHide {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+   <div class="payment  pt-5 pb-5 text-center">
+     <div class="container">
+         <form class="form-group">
+             <input type="text" placeholder="Account Number..." class="acountNumber form-control mb-2" required>
+             <input type="text" placeholder="IBAN..." class="Iban form-control mb-2" required>
+             <input type="text" placeholder="SWIFT code..." class="SwiftCode form-control mb-2" required>
+             <input type="text"  placeholder="bank name..." class="bankName form-control mb-2" required>
+             <input type="text" placeholder="name of acount holder..." class="acountHolder form-control mb-2" required>
+             <input type="text" placeholder="type of the acount..." class="acountType form-control mb-2" required>
+             <button type="submit" class="btn btn-outline-success text-light bg-danger submit">submit</button>
+     </form>
+     </div>
+   </div>
+   <div class="problem text-center pb-5 pt-5">
+    <div class="container">
+         <h5 class="text-success">
+            if you get in trouble,you can write to us
+         </h5>
+    <div class="complaints text-center mt-3">
+        <form action="example.php" method="post" class="form-group">
+            <div class="password">
+                 <input type="password" placeholder="enter your password..." name="password" class="mb-3 psw" required>
+                  <span class="showHide" onclick="showHisePsw()"><i class="fa-regular fa-eye-slash"></i></span>
+            </div>
+            <input type="email" placeholder="enter your email.. " name="email" class="form-control mb-3" required>
+            <textarea name="complaint" placeholder="enter your complaint" class="form-control mb-3" required></textarea>
+            <button type="submit" class="btn btn-outline-success text-light bg-danger complaintBtn">submit</button>
+        </form>  
+    </div>
+    </div>
+   </div>
+    <script src="../bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/popper.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="../JS/all.min.js"></script>
+</body>
+<script>
+// let acountNumber=document.querySelector(".acountNumber");
+// let Iban=document.querySelector(".Iban");
+// let SwiftCode=document.querySelector(".SwiftCode");
+// let bankName=document.querySelector(".bankName");
+// let acountHolder=document.querySelector(".acountHolder");
+// let acountType=document.querySelector(".acountType");
+let psw=document.querySelector(".psw");
+let showHide=document.querySelector(".showHide");
+    //  js code for showing and hiding the password
+   let mood="show";
+   function showHisePsw()
+   {
+    console.log("psw");
+    if(mood==="show" && psw.value!='')
+   {
+    mood="hide";
+    psw.type="text";
+    showHide.innerHTML=`<i class="fa-solid fa-eye"></i>`;
+   }
+   else{
+    mood="show";
+    psw.type="password";
+    showHide.innerHTML=`<i class="fa-regular fa-eye-slash"></i>`;
+   }
+   }
+</script>
+</html>

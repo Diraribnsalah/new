@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="shoes,dresses,business,electronic store">
+    <meta name="description" content="this is a electronic store">
+    <meta name="author" content="ibnsalah dirar">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg"> 
+      <div class="container">
+        <div class="navbar-brand"
+          > <span class="text-danger">E</span>commerce
+      </div>
+
+        <div class="badge navbar-toggler" data-toggle="collapse" data-target="#ul">
+          <span><i class="fa-solid fa-list-ul"></i></span>
+        </div>
+        <div id="ul" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link p-lg-3 active">Home</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link p-lg-3">Product</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link p-lg-3">Contact</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link p-lg-3">Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search text-center pt-2 pb-5">
+         <div class="container">
+                  
+                    <input type="search" placeholder="search on product..." class="inp-search">
+                    <span class="icon-search"><button class="btn-search" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                  
+         </div>
+    </div>
+    <div class="bag">
+       <span class="bag" onclick="showCardBox()"
+      ><i class="fa-solid fa-bag-shopping"></i
+    ></span>
+    </div>
+    <div class="product-box text-center pt-5 pb-5 mt-5">
+        <div class="container">
+          <div class="row"> 
+          </div>
+        </div>
+    </div>
+    <div class="connect text-center mt-3">
+         <div class="container">
+           <h2> you are offLine now</h2>
+         <ul class="list-unstyled">
+          <li><span class="point">*</span>cheking the connection</li>
+          <li><span class="point">*</span>cheking the proxy and firewall</li>
+          <li><span class="point">*</span>running window Network Diagnotics</li>
+         </ul>
+         </div>
+    </div>
+    <div class="evaluation  text-center pt-3 pb-3">
+       <div class="container">
+          <div class="question mb-3">
+            <h5>How To Find Our Electronic Store?</h5>
+          </div>
+          <div class="reaction">
+            <span class="mr-3">
+               <span class="good" onclick="goodCounter()">
+                  <i class="fa-solid fa-thumbs-up"></i> 
+               </span>
+              <span class="counter1">
+                0
+              </span>
+             
+            </span>
+            <span class="ml-3">
+               <span class="notGood" onclick="badCounter()">
+              <i class="fa-solid fa-thumbs-down"></i> 
+            </span>
+            <span class="counter2">0</span>
+            </span>
+          </div>
+          <div class="commentSubmit">
+            <form action="example.php" method="post">
+               <label for="txtErea">what are your feedback about our online store?</label>
+               <textarea name="comment" id="txtErea" class="d-block m-auto"></textarea>
+               <button type="submit" class="btn btn-outline-success bg-danger text-dark mt-3 send">send</button>
+            </form>
+          </div>
+       </div>
+    </div>
+    <div class="cardBox">
+      <span class="x-mark" onclick="hideCardBox()"
+        ><i class="fa-solid fa-xmark"></i
+      ></span>
+     
+
+      <div class="box"></div>
+      <div class="btnTotal">
+       <a href="pay.html" class="m-auto" target="_blank"><button class="buy">buy</button></a>
+
+        <span>Total:<span class="total">0</span>$</span>
+      </div>
+    </div>
+    <div class="scroll">
+      ^
+    </div>
+    <div class="welcome  text-center">
+       <div>
+             welcome in our electronic store
+       </div>
+    </div>
+    <script src="../bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/popper.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="../JS/all.min.js"></script>
+    <script src="../scripts/index1.js"></script>
+</body>
+<script>
+ $(document).ready(function()
+{
+    $(".welcome").animate({top:0},5000,function()
+  {
+    $(this).fadeOut(4000);
+  }) 
+})
+</script>
+</html>
